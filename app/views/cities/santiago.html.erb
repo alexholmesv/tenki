@@ -1,3 +1,11 @@
-<div id="bg">
-  <img <%= image_tag 'santiago.jpg' %> alt="santiago">
+<div>  
+  <%= image_tag 'santiago.jpg', alt:"santiago", id:"full-screen-background-image"%> 
+
+   <div id="wrapper">
+    <h1 class="largenumbers"> <%= @temperature %> </h1>
+	<p class="forecast"> Forecast for tomorrow</p>
+    <h3 class="forecastnumbers"> <%= @forecast %> </h3>
+  </div>
+
+
 </div>
