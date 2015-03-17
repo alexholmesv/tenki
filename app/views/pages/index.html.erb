@@ -11,51 +11,14 @@
 
     <title>10KI</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href= <%="stylesheets/stylish-portfolio.css"%> rel="stylesheet">
 
-    <!-- Custom Fonts -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
 
 
 </head>
 
 <body>
-
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top"> <%= image_tag "logosmall.png", class:"logosmall" %></a>
-            </li>
-            <li>
-                <%= link_to "Home", root_path %>
-            </li>
-            <li>
-                
-            </li>
-            <li>
-                <%= link_to "Paris", cities_paris_path %>
-            </li>
-            <li>
-                <%= link_to "Bangkok", cities_bangkok_path %>
-            </li>
-            <li>
-                <%= link_to "Santiago", cities_santiago_path %>
-            </li>
-            <li>
-                <%= link_to "New York", cities_newyork_path %>
-            </li>
-            <li>
-                <%= link_to "Bamako", cities_bamako_path %>
-            </li>
-        </ul>
-    </nav>
 
     <!-- Header -->
     <header id="top" class="header">
@@ -163,7 +126,7 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     
                     <ul class="list-inline">
-                        <li>
+                       <!--  <li>
                             <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                         </li>
                         <li>
@@ -171,7 +134,7 @@
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                        </li>
+                        </li> -->
                     </ul>
                     <hr class="small">
                     <p class="text-muted">Copyright &copy; 2015</p>
@@ -179,38 +142,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>
 
 </body>
 
