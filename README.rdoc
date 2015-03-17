@@ -1,5 +1,7 @@
 == README
 
+TENKI V.0.1
+
 This is a simple Rails weather app that shows the current temperature and forecast for 5 different cities: Santiago, Bangkok, Bamako, Paris and New York.
 
 * Ruby version
@@ -12,3 +14,5 @@ This is a simple Rails weather app that shows the current temperature and foreca
 - Bootstrap CDN
 - jquery.smoothState.js and css.
 
+* Expected changes on next version
+- AJAXed views to reduce latency on all city pages. 
