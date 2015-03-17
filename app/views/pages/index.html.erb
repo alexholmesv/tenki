@@ -1,2 +1,213 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>10KI</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href= <%="stylesheets/stylish-portfolio.css"%> rel="stylesheet">
+
+    <!-- Custom Fonts -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"> <%= image_tag "logosmall.png", class:"logosmall" %></a>
+            </li>
+            <li>
+                <%= link_to "Home", root_path %>
+            </li>
+            <li>
+                
+            </li>
+            <li>
+                <%= link_to "Paris", cities_paris_path %>
+            </li>
+            <li>
+                <%= link_to "Bangkok", cities_bangkok_path %>
+            </li>
+            <li>
+                <%= link_to "Santiago", cities_santiago_path %>
+            </li>
+            <li>
+                <%= link_to "New York", cities_newyork_path %>
+            </li>
+            <li>
+                <%= link_to "Bamako", cities_bamako_path %>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <div><%= image_tag "logobig.png", class:"logobig"%></div>
+            <h3>Your weather information page</h3>
+            <br>
+            <a href="#cities" class="btn btn-dark btn-lg">Select a City</a>
+        </div>
+    </header>
+
+    <!-- Cities -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. -->
+    <section id="cities" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Cities</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-coffee fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Paris</strong>
+                                </h4>
+                                
+                                <a href="#" class="btn btn-light">Check it out</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-glass fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Santiago</strong>
+                                </h4>
+                                
+                                <a href="#" class="btn btn-light">Check it out</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-suitcase fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Bangkok</strong>
+                                </h4>
+                                <a href="#" class="btn btn-light">Check it out</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-md-offset-2">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-building-o fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>New York</strong>
+                                </h4>
+                               
+                                <a href="#" class="btn btn-light">Check it out</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 ">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-leaf fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Bamako</strong>
+                                </h4>
+                                
+                                <a href="#" class="btn btn-light">Check it out</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>

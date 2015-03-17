@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'cities/paris'
+
+  get 'cities/bangkok'
+
+  get 'cities/santiago'
+
+  get 'cities/newyork'
+
+  get 'cities/bamako'
+
   get 'pages/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
