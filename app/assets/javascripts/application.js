@@ -12,6 +12,4 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require functions
-//= reqiure jquery.smoothState
 //= require_tree .
