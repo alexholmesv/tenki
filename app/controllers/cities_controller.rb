@@ -11,13 +11,13 @@ class CitiesController < ApplicationController
   end
 
   def santiago
-    @temperature = getTemperature("CIXX0020")
-    @forecast = getForecast("CIXX0020")  
+    @temperature = getTemperature("santiago-349859")
+    @forecast = getForecast("santiago-349859")  
   end
 
   def newyork
-    @temperature = getTemperature("2459115")
-    @forecast = getForecast("2459115")  
+    @temperature = getTemperature("new-york")
+    @forecast = getForecast("new-york")  
   end
 
   def bamako
